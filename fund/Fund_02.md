@@ -20,8 +20,8 @@ Print out the first name of the employee and the department name where the emplo
     - Ref: http://docs.oracle.com/cd/B19306_01/server.102/b14357/ch12040.htm
 - `DBMS_OUTPUT` package: a package to output messages to the console.
     - Ref: http://docs.oracle.com/cd/E11882_01/appdev.112/e40758/d_output.htm#ARPLS036
-- The function of the slash `/` at the end of the block: slash(/) 
-Executes the PL/SQL block which is stored in the SQL buffer.
+- Why uses slash `/` at the end of the block: The slash(/) notifies the PL/SQL engine to  
+execute the PL/SQL block stored in the SQL buffer.
   - Ref: 
     * https://docs.oracle.com/cd/B19306_01/server.102/b14357/ch12004.htm
     * http://stackoverflow.com/questions/1079949/when-do-i-need-to-use-a-semicolon-vs-a-slash-in-oracle-sql
