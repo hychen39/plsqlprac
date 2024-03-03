@@ -15,5 +15,6 @@ Example:
 
 ## Directory structure and files
 - `01-Reviewing basic sql statements.md`: The review of basic SQL statements.
-- fund: practices for the lessons in the Oracle PL/SQL Fundamentals.
-- punit: practices for the lessons in the Oracle PL/SQL Programming Unit.
+- fund/: practices for the lessons in the Oracle PL/SQL Fundamentals.
+- punit/: practices for the lessons in the Oracle PL/SQL Programming Unit.
+- patterns/: The PL/SQL programming patterns
