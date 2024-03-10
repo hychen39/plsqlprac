@@ -6,7 +6,7 @@ Refer table column's data types to declare variables
 
 Refer table column's data types to declare variables.
 
-Use the %TYPE attribute to declare a variable with the same data type as a column in a table.
+Use the %TYPE attribute to declare a variable with the same data type as a table column.
 
 Use it when you want to declare a variable that will hold the same type of data as a column in a table.
 
