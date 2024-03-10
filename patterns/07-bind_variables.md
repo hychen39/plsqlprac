@@ -6,15 +6,15 @@ Use bind variables as the worksheet variables to exchange data between the block
 
 Use bind variables as the worksheet variables to input data to SQL and PL/SQL blocks and store the output data from the blocks in the worksheet.
 
-Bind variables have the same life span as the worksheet. You can use them in the SQL statements and PL/SQL blocks in the worksheet.
+Bind variables have the same lifespan as the worksheet. You can use them in the SQL statements and PL/SQL blocks in the worksheet.
 
 To operate with bind variables: 
-- Use `variable` command to declare a bind variable in the worksheet. 
+- Use the `variable` command to declare a bind variable in the worksheet. 
 - Use the colon (:) before the bind variable name to reference it in the SQL statement and PL/SQL block.
 - Use the `print` command to print the values of the bind variables.
 - Assign a value to the bind variable by using the anonymous block or `exec` command.
 
-You need to run the entire worksheet to see the output by executing the Run Script button (pressing F5).
+To see the output, you need to run the entire worksheet by executing the Run Script button (pressing F5).
 
 **Do not run line by line**.
 
@@ -22,10 +22,10 @@ You need to run the entire worksheet to see the output by executing the Run Scri
 
 The following example:
 1. Creates a bind variable
-2. Assigns a value to the bind variable by using the anonymous block
+2. Assign a value to the bind variable by using the anonymous block
 3. Uses the bind variable in the SQL statement to retrieve data from the `employees` table
 4. Create other two bind variables. 
-5. Use them in the PL/SQL block to to save the values of the `first_name` and `last_name` columns from the `employees` table.
+5. Use them in the PL/SQL block to save the values of the `first_name` and `last_name` columns from the `employees` table.
 6. Print the values of the bind variables.
 
 ```sql
@@ -60,7 +60,7 @@ begin
 end;
 /
 
--- 6.Print the values of the bind variables
+-- 6. Print the values of the bind variables
 print b_fname;
 print b_lname;
 ```
