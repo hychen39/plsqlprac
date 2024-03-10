@@ -4,9 +4,9 @@ Initialize local variables when declaring them.
 
 ## Description
 
-Initialize local variables when declaring them to avoid unexpected behavior, which is a best practice in programming.
+Initializing local variables when declaring them to avoid unexpected behavior is a best practice in programming.
 
-You must to initialize variables with the constant and NOT NULL constraints.
+You must initialize variables with the constant and NOT NULL constraints.
 
 You cannot assign a value to variables with the constant constraints in the executable section. 
 
@@ -26,7 +26,7 @@ begin
 	null;
     -- Assign a value to a variable with no constant constraint/
 	v_cust_name := 'John Doe';
-    -- Assign a value to variable with the NOT NULL constraint.
+    -- Assign a value to a variable with the NOT NULL constraint.
 	v_payment  := 100;
     dbms_output.put_line('Customer Name: ' || v_cust_name || ' Payment: ' || v_payment);
 end;
