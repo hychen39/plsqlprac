@@ -14,7 +14,7 @@ Create two bind variables.
 Use one of them to save employee ID 104. Use it in the select statement to find the employee's salary in the PL/SQL block. 
 The new salary should be saved to the other bind variable. 
 
-After executing the block, you should print out the values of the two bind variables. 
+After executing the worksheet, you should print out the values of the two bind variables. 
  
 When executing the block, you should press the F5 key to execute the whole script. Do not execute line-by-line by pressing Ctrl + Enter.
 
