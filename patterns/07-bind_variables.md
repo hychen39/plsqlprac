@@ -10,7 +10,7 @@ Bind variables have the same lifespan as the worksheet. You can use them in the 
 
 To operate with bind variables: 
 - Use the `variable` command to declare a bind variable in the worksheet. 
-- Use the colon (:) before the bind variable name to reference it in the SQL statement and PL/SQL block.
+- Use the colon (`:`) before the bind variable name to reference it in the SQL statement and PL/SQL block.
 - Use the `print` command to print the values of the bind variables.
 - Assign a value to the bind variable by using the anonymous block or `exec` command.
 
