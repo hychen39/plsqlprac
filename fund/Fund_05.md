@@ -3,10 +3,6 @@
 
 ## Practice 01: Use SQL Statements in the PL/SQL
 
-Practice highlights:
-- Use the INSERT and UPDATE SQL statements in the PL/SQL
-- Use cursor attribute: sql%rowcount
-
 Prepare the table for the practice:
 ```sql
 create table dept as 
@@ -22,9 +18,14 @@ Write an anonymous block to meet the requirements below:
 - Dept Name: 'Education'
 - Location id: null
 
-3. Print the number of rows affected by the INSERT statement. 
+1. Print the number of rows affected by the INSERT statement. 
 
-4. Update the `LOCATION_ID` column with a value of 3000 for the row you just inserted. Then, print the number of rows affected by the UPDATE statement.
+2. Update the `LOCATION_ID` column with a value of 3000 for the row you just inserted. Then, print the number of rows affected by the UPDATE statement.
+
+### Related programming patterns:
+- [10 Write DML statements in PL/SQL blocks](../patterns/10-write_dml_stmt.md)
+- [11 Obtain the number of affected rows by the DML statements in PL/SQL blocks](../patterns/11-obtain_num_of_affected_rows.md)
+
 
 ## Practice 02: Merge two tables using the MERGE statement in the PL/SQL
 
@@ -108,5 +109,8 @@ PL/SQL procedure successfully completed.
                  8         10
 ```
 
+### Related programming patterns:
 
-  
+- [07 Use bind variables as the worksheet variables to exchange data between the blocks.](../patterns/07-bind_variables.md)
+- [10 Write DML statements in PL/SQL blocks](../patterns/10-write_dml_stmt.md)
+- [11 Obtain the number of affected rows by the DML statements in PL/SQL blocks](../patterns/11-obtain_num_of_affected_rows.md)
