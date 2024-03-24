@@ -119,7 +119,9 @@ END;
 ```
 
 A. Why does the inner block display the job_id of employee 103, not employee 100?
+
 B. Why does the outer block display the job_id of employee 100, not employee 103?
+
 C. Modify the code to display the details of employee 100 in the inner block. Use block labels.
 
 Note: This practice is derived from Ch 2-6 Nested Blocks and Variable Scope in the Oracle Academy. 
