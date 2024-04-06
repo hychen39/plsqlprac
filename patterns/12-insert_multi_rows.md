@@ -13,6 +13,7 @@ When you use it in the PL/SQL block, you can use the `SQL%ROWCOUNT` attribute to
 The syntax of the INSERT INTO SELECT statement is as follows:
 
 ![](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/img/single_table_insert.gif)
+
 Ref: [INSERT, SQL Language Reference 19c](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/INSERT.html)
 
 ## Example: Select employees whose salaries are greater than the company average and insert them into the `emp_above_avg` table.
