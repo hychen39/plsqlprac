@@ -114,3 +114,4 @@ PL/SQL procedure successfully completed.
 - [07 Use bind variables as the worksheet variables to exchange data between the blocks.](../patterns/07-bind_variables.md)
 - [10 Write DML statements in PL/SQL blocks](../patterns/10-write_dml_stmt.md)
 - [11 Obtain the number of affected rows by the DML statements in PL/SQL blocks](../patterns/11-obtain_num_of_affected_rows.md)
+- [12 Insert multiple rows from another data source into a table](../patterns/12-insert_multi_rows.md)
