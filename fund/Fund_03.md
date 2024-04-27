@@ -9,6 +9,7 @@ Please print out the date to increase the salary the first time and the new sala
 ### Related programming patterns
 
 [03. Initialize local variables when declaring them.](../patterns/03-init_variables.md)
+
 [05. Assign or initialize format-sensitive literal values to variables: date, timestamp, and interval. ](../patterns/05-assign_format_sensitive_literal.md)
 
 ## Practice 2
