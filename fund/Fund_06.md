@@ -7,7 +7,7 @@
 
 Write a PL/SQL program to print the salary grade for the employee with ID 206. 
 The salary is graded as:
-- C level, if it is less than or equal to 94000. 
+- C level, if it is less than or equal to 9400. 
 - B level, if it is between 9400 and 16700,
 - A, Otherwise. 
 
