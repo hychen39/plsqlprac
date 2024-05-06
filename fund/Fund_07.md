@@ -5,15 +5,15 @@
 ## Practice 01: User-defined record type
 
 Define a record type that includes the following fields:
-- emp_id: employee id 
-- first_name: first name 
-- last_name: last name 
-- dept_name: department name 
-- salary: number 
+- emp_id: employee_id from employees table
+- first_name: first_name from employees table
+- last_name: last_name from employees table
+- dept_name: department_name from departments table
+- salary: salary from employees table
 
 You need to determine the data type for each field. 
 
-Use the record type to declare a variable to store the corresponding column values from the employee with ID 124. For example, the employee_id value should be stored into the emp_id field in the declared variable of the record type.  
+Use the record type to declare a variable to store the corresponding column values from the employee with ID 124. For example, the employee_id value should be stored in the emp_id field in the declared variable of the record type.  
 
 The program should print out the `emp_id`, `first_name` and `salary` fields in the variable of the user-defined record type.
 
