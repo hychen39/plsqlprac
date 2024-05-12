@@ -4,18 +4,20 @@ Initialize an associative array with the collection constructor in the PL/SQL bl
 
 ## Description
 
-An associate array is a collection of key-value pairs to store a set of elements of the same data type. The element can be a scalar data type or a composite data type.
+An associate array is a collection of key-value pairs that stores a set of elements of the same data type. 
 
-An associative array consists of two parts: the key and the value. The key is unique and used to access the value. The value can be any data type, including a record.
+An associative array consists of two parts: the key and the value. 
 
-For example, we can create an associative array to a set of employee from a department. The key is the employee ID, and the value is the employee name or the employee record.
+The key data type can be integer or varchar2; the value can be a scalar or record data type.
+
+For example, we can create an associative array for a set of employees from a department. The key is the employee ID, and the value is the employee name or the employee record.
 
 To create an associative array, we must define the type of the key and the value first. Then, we can declare an associative array variable of the type and initialize it with the collection constructor (function). 
 
 The collection constructor is a function that creates a collection and initializes it with the specified values. Oracle creates the constructor function implicitly for each defined collection type. That is, the name of the constructor function is the same as the name of the collection type.
 
 
-Let see an example.
+Let's see an example.
 
 ## Example
 
@@ -33,7 +35,7 @@ create table emp (
 
 The following code creates an associative array to store rows from the `emp` table. 
 
-The key data type is number, and the value data type is a record with the same structure as the `emp` table.
+The key data type is a number, and the value data type is a record with the same structure as the `emp` table.
 
 You need two steps to create an associative array:
 1. Define the record type that has the same structure as the `emp` table.
@@ -144,6 +146,8 @@ If you want to see more details, please refer to [1].
 
 
 
+
+  
 
   
 
