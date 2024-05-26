@@ -18,3 +18,8 @@ Example:
 - fund/: practices for the lessons in the Oracle PL/SQL Fundamentals.
 - punit/: practices for the lessons in the Oracle PL/SQL Programming Unit.
 - patterns/: The PL/SQL programming patterns
+
+## Programming Patterns
+
+- [01 Select a scalar value from a table into a pl local variable](patterns/01-select_scalar_value_to_variable.md)
+- [15 Use an explicit cursor to update or delete rows in a table](patterns/15-DML-with-explicit-cursor.md)
