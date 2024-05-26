@@ -28,14 +28,14 @@ ORA-06512: at line 4
 
 Please add the exception handling section to the program. Your program should print out the error code and message for the NO_DATA_FOUND exception and terminate gracefully. 
 
-Outputs should look like as the following:
+Outputs should look like the following:
 ```
 Error code: 100
 Error Msg: ORA-01403: no data found
 
 PL/SQL procedure successfully completed.
 ```
-Note the state should be successfully completed after you executing the program. 
+Note the state should be successfully completed after you execute the program. 
 
 <!-- ## Practice 02
 
@@ -50,7 +50,7 @@ Add an exception handling section to handle it. Print out the error code and the
 
 ## Practice 02: execution flow when an exception occurs
 
-Consider the following program? What is the outputs for the program? Why?
+Consider the following program? What is the output of the program? Why?
 
 ```sql
 SET serveroutput ON
@@ -72,16 +72,21 @@ END;
 /
 ```
 Options: 
+
 A) NO_DATA_FOUND EXCEPTION
+
 B) TOO_MANY_ROWS EXCEPTION
+
 C) OTHER EXCEPTIONS
+
 D) Mission Complete!!
+
 E) None of the above. 
 
 ## Practice 03 Handling Non-Predefined server errors
 
 
-The following program tries to insert a row the `DEPARTMENTS` table.:
+The following program tries to insert a row in the `DEPARTMENTS` table.:
 ```sql
 BEGIN
   INSERT INTO DEPARTMENTS
@@ -100,7 +105,7 @@ ORA-06512: at line 2
 *Cause:    An attempt was made to insert NULL into previously listed objects.
 *Action:   These objects cannot accept NULL values.
 ```
-Please add an exception handling section to handel the exception so that the program can terminate gracefully.
+Please add an exception handling section to handle the exception so that the program can terminate gracefully.
 
 You need to declare an exception and associate it with the error number -1400 in the declarative section. 
 
@@ -127,7 +132,7 @@ END;
 /
 ```
 
-The outputs after executing the program are as the following:
+The outputs after executing the program are as follows:
 ```
 Updated rows: 0
 PL/SQL procedure successfully completed.
@@ -135,8 +140,8 @@ PL/SQL procedure successfully completed.
 
 Add codes to the given program to meet the following requirements:
 - When no row is updated, the program should throw the user-defined exception `E_INVALID_LOCATION`.
-- Add a exception handling section to catch the `E_INVALID_LOCATION` exception and print out the following message:
-`No such country ID: [your_country_id] exist.`
+- Add an exception handling section to catch the `E_INVALID_LOCATION` exception and print out the following message:
+`No such country ID: [your_country_id] exists.`
 
 
 
@@ -146,7 +151,7 @@ Add codes to the given program to meet the following requirements:
 Consider the following program. The line after the Mark 1 causes the program error. 
 Please use a nested block to enclose the line and handle the exception caused by the line inside the nested block. 
 
-Note that the lines with mark 2 and 3 cannot be executed in the exception handling section.  
+Note that the lines with marks 2 and 3 cannot be executed in the exception handling section.  
 
 ```sql 
 SET serveroutput ON
@@ -203,12 +208,12 @@ ORA-06512: at "HR.RAISE_USER_DEFINE_ERROR", line 4
 ORA-06512: at line 6
 20000. 00000 -  "%s"
 *Cause:    The stored procedure 'raise_application_error'
-           was called which causes this error to be generated.
+           was called, which causes this error to be generated.
 *Action:   Correct the problem as described in the error message or contact
            the application administrator or DBA for more information.
 ```
 
-Please add exception handling section the the previous program so that it can catch the user-defined error and print out the user-defined error code and message as the following:
+Please add an exception handling section the the previous program so that it can catch the user-defined error and print out the user-defined error code and message as follows:
 ```
 Err Msg:ORA-20000: Throw an app error. User-defined error.
 
