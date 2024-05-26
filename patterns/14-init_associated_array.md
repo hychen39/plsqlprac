@@ -67,8 +67,14 @@ For example, we can initialize the `emp_aa` associative array with two elements:
 ```sql
 set serveroutput on
 declare
+    -- #1 Define the record type and create the record constructor
+    type emp_rec is record (
+        emp_id emp.emp_id%type,
+        fname emp.fname%type,
+        salary emp.salary%type
+    );
+
     type emp_aa_type is table of emp%rowtype index by pls_integer;
-    
     emp_aa emp_aa_type;
 begin
     -- use assignment statements to initialize the associative array
