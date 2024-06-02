@@ -28,7 +28,7 @@ commit;
 Create a stored procedure named `add_score` that takes three parameters: `stu_id`, `subject`, and `score`. 
 The stored procedure should insert a new record into the student_scores table.
 The procedure should check the `score` parameter to ensure it is between 0 and 100.
-If the `score` is not within the valid range, the procedure should raise an custom application error. 
+If the `score` is outside the valid range, the procedure should raise a custom application error. 
 Use the error code -20001 and the error message  `Invalid score` for the custom error.
 
 For example, the following call to `add_score` should insert a new record into the student_scores table:
@@ -49,10 +49,10 @@ END;
 
 ## Practice 2: Create a stored function 
 
-Create a stored function named `get_score` that takes two parameters: `stu_id` and `subject` and returns the score for the student and subject.
+Create a stored function named `get_score` that takes two parameters: `stu_id` and `subject`, and returns the score for the student and subject.
 
 The function should handle the exception when the student ID and subject are not found in the student_scores table.
-The function should return -1 and print a warn message "The following student ID and subject does not exist <student_id>, <subject>" if the exception is raised.
+The function should return -1 and print a warning message "The following student ID and the subject do not exist <student_id>, <subject>" if the exception is raised.
 
 Use the following SQL to test the function:
 
@@ -67,14 +67,14 @@ end;
 The output should be:
 ```
 Score: 90
-The following student ID and subject does not exist 4, Math
+The following student ID and the subject do not exist 4, Math
 Score: -1
 Score: 85
 ```
 
 ## Practice 3: Handle exceptions when calling stored procedures
 
-Consider the following SQL script that using the `add_score` procedure in the previous practice to insert multiple records into the student_scores table:
+Consider the following SQL script that uses the `add_score` procedure in the previous practice to insert multiple records into the student_scores table:
 
 ```sql
 BEGIN
