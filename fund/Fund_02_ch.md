@@ -16,6 +16,7 @@
 ## 相關程式樣式
 
 - [匿名區塊基本結構 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/01-01-block-structure)
+- [從表格中選取多個欄位值並存入 Pl/SQL 變數 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/01-02-select-into)
 
 ## Notes
 
