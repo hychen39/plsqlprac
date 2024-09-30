@@ -13,6 +13,10 @@
 列印員工的名字(first name)和員工工作的部門名稱(department name)。
 
 
+## 相關程式樣式
+
+- [匿名區塊基本結構 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/01-01-block-structure)
+
 ## Notes
 
 - `set serveroutput on`: 開啟此選項可以使 `DBMS_OUTPUT.PUT_LINE` 的結果輸出到 SQL Developer。
