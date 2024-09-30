@@ -1,6 +1,6 @@
 # Title
 
-Refer table column's data types to declare variables
+P06. Refer table column's data types to declare variables
 
 ## Description
 

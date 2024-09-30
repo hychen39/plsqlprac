@@ -1,6 +1,6 @@
 # Title 
 
-Select multiple column values from a table and put them into PL/SQL local variables.
+P02. Select multiple column values from a table and put them into PL/SQL local variables.
 
 ## Description
 

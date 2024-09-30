@@ -1,6 +1,6 @@
 # Title 
 
-Use record variables with SELECT, UPDATE, and INSERT statements.
+P16. Use record variables with SELECT, UPDATE, and INSERT statements.
 
 # Description
 

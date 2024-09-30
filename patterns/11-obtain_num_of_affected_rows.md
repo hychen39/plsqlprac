@@ -1,6 +1,6 @@
 # Title
 
-Obtain the number of affected rows by the DML statements in PL/SQL blocks.
+P11. Obtain the number of affected rows by the DML statements in PL/SQL blocks.
 
 ## Description
 

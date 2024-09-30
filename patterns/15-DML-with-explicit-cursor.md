@@ -1,6 +1,6 @@
 # Title 
 
-Use an explicit cursor to update or delete rows in a table.
+P15. Use an explicit cursor to update or delete rows in a table.
 
 ## Description
 
