@@ -8,11 +8,11 @@ ID 104 的員工自入職之日起工作一年後將首次獲得加薪，增幅�
 
 ### 相關程式樣態
 
-[從表格中選取多個欄位值並存入 Pl/SQL 變數 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/01-02-select-into)
+[P02_01 從表格中選取多個欄位值並存入 Pl/SQL 變數 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch02/02-01-select-into)
 
-[03. Initialize local variables when declaring them.](../patterns/03-init_variables.md)
+[P03_01 變數初始化 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch03/03-01-init-var)
 
-[05. Assign or initialize format-sensitive literal values to variables: date, timestamp, and interval. ](../patterns/05-assign_format_sensitive_literal.md)
+[P03_02 指派格式敏感(format-sensitive)的文字值給變數 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch03/03-02-init-var-format-sens)
 
 ## Practice 2
 
@@ -26,7 +26,7 @@ ID 104 的員工自入職之日起工作一年後將首次獲得加薪，增幅�
 
 ### Related programming patterns
 
-[07. Use bind variables as the worksheet variables to exchange data between the blocks.](../patterns/07-bind_variables.md)
+[P03_03 綁定變數的使用 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch03/03-03-bind-var)
 
 ## Practice 3
 
@@ -38,4 +38,4 @@ ID 104 的員工自入職之日起工作一年後將首次獲得加薪，增幅�
 
 ### Related programming patterns
 
-[06. Refer table column's data types to declare variables](../patterns/06-ref_col_type_to_declare.md)
+[P03_04 %type 綁定區域變數的資料型態到表格的欄位資料型態 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch03/03-04-type-ref)
