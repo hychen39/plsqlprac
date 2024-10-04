@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../plsql_patterns_git"
+		}
+	],
+	"settings": {
+		"commentTranslate.targetLanguage": "zh-TW"
+	}
+}
