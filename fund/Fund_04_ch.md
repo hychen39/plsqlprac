@@ -8,7 +8,6 @@
 - 把 `v_salary` 和 `v_add` 相加後 可以得到 `v_total_salary` 的值。請注意， `v_salary` 是數字，`v_add`是一個字串，他們不能直接相加。
 - 變數 `v_total_salary` 的值應該是 7000, 是數字型態。
 
-1. Please write codes at line 2. Calculate the value of `v_retire_date` by adding the interval `v_interval` to the `v_hire_date`. Note that the `v_hire_date` is a string, and `v_interval` is a date-time interval.
 2. 請在 Mark 2 編寫程式碼以算出退休日期(v_retire_date)的值。
 - 把 `v_interval` 加到 `v_hire_date` 後可以得到 `v_retire_date` 的值。請注意， `v_hire_date` 是一個字串，`v_interval` 是一個日期時間間隔。
 - `v_hire_date` 內的日期文字不符預設的日期格式 (DD-MON-RR), 請注意這一點。
