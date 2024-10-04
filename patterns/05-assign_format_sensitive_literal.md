@@ -22,9 +22,9 @@ select * from nls_session_parameters where parameter = 'NLS_DATE_FORMAT';
 declare
     -- Need to comply with the NLS_DATE_FORMAT setting
     -- Default format is 'DD-MON-RR'
-    v_date date := '10/03/24';   -- date literal
+    v_date date := '03-OCT-24';   -- date literal
     -- timestamp literal
-    v_timestamp timestamp := '10/03/24 12:00:00';  
+    v_timestamp timestamp := '03-OCT-24 12:00:00';  
     -- interval literal
     v_interval interval day to second := interval '1 12:00:00' day to second;
 begin
