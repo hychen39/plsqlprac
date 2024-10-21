@@ -85,17 +85,6 @@ commit;
 ```
 `t1` 表格中應該有 10 筆資料列。
 
-
-Write a worksheet to meet the requirements below:
-1. Declare a host variable to store a threshold value.
-2. Write an empty PL/SQL block.
-3. In the block, write an INSERT WITH SUBQUERY statement to insert the rows from the `t1` table to the `t1_keep` table where the `val` column value is less than the threshold value.
-4. Then, print out the number of rows affected by the INSERT statement.
-5. In the same block, write a DELETE statement to delete the rows from the `t1` table where the `val` column value is less than the threshold value.
-6. Print out the number of rows affected by the DELETE statement.
-7. Commit the transaction in the block.
-8. After the block, query the  `t1_keep` tables to check the results.
-
 你要撰寫一個命令稿, 將 `t1` 表格中的資料列的值小於閾值的資料列插入到 `t1_keep` 表格中，並刪除 `t1` 表格中的這些資料列。
 這個閾值存於一個綁定變數(bind variable)中，值為 50。
 
