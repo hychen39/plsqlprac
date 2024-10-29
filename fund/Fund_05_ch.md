@@ -6,7 +6,7 @@
 準備練習所需要的表格
 ```sql
 create table dept as 
-select * from hr.departments;
+select * from departments;
 ```
 
 撰寫一個匿名區塊來完成下列要求：
