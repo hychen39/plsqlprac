@@ -44,9 +44,9 @@ CREATE TABLE retired_emps
 
 我們有以下的 PL/SQL 程式碼，其中有部分的程式碼。
 我們已經宣告了一個變數 `v_retired_emps` 來存儲 `retired_emps` 表格的資料。
-你必須在 Task 1 到 5 的標記後寫程式碼來完成以下要求：
+你必須在 Task 1 到 4 的標記後寫程式碼來完成以下要求：
 - Task 1: 將 來自於 EMPLOYEES 表格中的 employee_id 為 124 的資料列的相應欄位值存儲到 RECORD 變數 `v_retired_emps` 中。注意 `employees` 表格中沒有 `LEAVEDATE` 欄位。
-- Task 2: 將 `v_retired_emps` 變數的值新增到 `retired_emps` 表格中。使用 `v_retired_emps` 變數一整列。
+- Task 2: 將 `v_retired_emps` 變數的值新增到 `retired_emps` 表格中。使用 `v_retired_emps` 變數新增一整列。
 - Task 3: 將 `v_retired_emps` 變數中的 `LEAVEDATE` 欄位設置為今天的日期。
 - Task 4: 使用 `v_retired_emps` 變數的值來更新 `retired_emps` 表格中相應的資料列。使用 `v_retired_emps` 變數做整列更新。
 
@@ -68,9 +68,6 @@ BEGIN
   -- Write your codes here
   
   -- Task 4
-  -- Write your codes here
-  
-  -- Task 5
   -- Write your codes here
    
 END;
@@ -94,7 +91,7 @@ END;
 
 參考 HR schema, 撰寫一個 PL/SQL 程式一次捉取多筆資料並將存到 Index-by Table 中。
 1. 查詢位於英國的部門的部門編號(department_id)和部門名稱(department_name)。將這些資料存到 Index-by Table `l_dept_uk_tab` 中。
-   - Index-by Table 中的記錄包含兩個欄位及其型態：(dept_id number, dept_name departments.department_name%type)
+   - Index-by Table 中的記錄包含兩個欄位：`(dept_id number, dept_name departments.department_name%type)`
    - 你需要使用 `select bulk collect into` 來完成這個任務。
 2. 從第一筆記錄開始，遍歷 Index-by Table `l_dept_uk_tab` 中的所有記錄，輸出部門名稱。
    - 你需要使用 `WHILE-LOOP` 來遍歷 Index-by Table。
