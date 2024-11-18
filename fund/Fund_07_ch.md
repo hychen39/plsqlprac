@@ -5,13 +5,6 @@
 
 ## Practice 01: 使用自定的記錄類型
 
-Define a record type that includes the following fields:
-- emp_id: employee_id from employees table
-- first_name: first_name from employees table
-- last_name: last_name from employees table
-- dept_name: department_name from departments table
-- salary: salary from employees table
-
 定義一個記錄類型，包含以下欄位：
 - emp_id: 參考到 employees 表格的 employee_id
 - first_name: 參考到 employees 表格的 first_name
