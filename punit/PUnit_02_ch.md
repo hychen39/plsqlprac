@@ -23,31 +23,6 @@
 
 使用此程序取得部門 ID 為 50 和 60 的最高薪水，並印出結果。
 
-## Practice 3: Throw a user-defined error from a procedure 
-
-Modify your `dep_max_salary` procedure by adding codes to check application logic. 
-
-If the maximum salary of the given department is null, the procedure should throw an application error with the code -20000 and the error message 'Null Max Salary'.
-
-In addition, you need to handle the application error in the `dep_max_salary` procedure and print out the error message.
-
-Use the following anonymous block to call your `dep_max_salary`  with various department IDs:
-```
-declare 
-    l_salary number
-begin
-    dep_max_salary(100, l_salary);
-    dbms_output.put_line('Dept 100: ' || l_salary);
-    dep_max_salary(105, l_salary);
-    dbms_output.put_line('Dept 105: ' || l_salary);   -- no such ID in the departments table
-    dep_max_salary(110, l_salary);
-    dbms_output.put_line('Dept 110: ' || l_salary);
-end;
-/
-```
-
-Your anonymous block should complete SUCCESSFULLY. 
-
 ## Practice 3: 從程序中拋出使用者自訊伺服器錯誤代碼和訊息
 
 修改 Practice 2 中的 `dep_max_salary` 程序，加入程式碼來檢查應用程式邏輯。
@@ -83,5 +58,35 @@ Dept 110: 12008
 PL/SQL procedure successfully completed.
 ```
 
+參考程式模式：
 
+[P09_01 例外處理概述 | 情境 4: 拋出錯誤 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch09-li-wai-chu-li/09-01-except-handling#qing-jing-4-pao-chu-cuo-wu)
   
+
+## Practice 4: 建立具有選項參數的預儲程序
+
+建立一個名為 `top_n_employees` 的預儲程序, 印出薪水最高的前 N 個員工的資訊。
+
+此程序應該具有以下參數，依序為：
+1. 部門 ID (p_dept_id)：必要參數，沒有預設值。
+2. 員工數量 (p_top_n)：選擇性參數，預設值為 5。
+3. 薪水門檻 (p_min_salary)：選擇性參數，預設值為 0。
+
+不可改變參數的順序。
+
+使用此程序印出部門 ID 為 100 且薪水大於 5000 的員工資訊。
+
+輸出欄位包括：employee_id, last_name, salary.
+
+輸出參考:
+```
+PL/SQL procedure successfully completed.
+
+employee_id: 108, last_name: Greenberg, salary: 12008
+employee_id: 109, last_name: Faviet, salary: 9000
+employee_id: 110, last_name: Chen, salary: 8200
+employee_id: 112, last_name: Urman, salary: 7800
+employee_id: 111, last_name: Sciarra, salary: 7700
+```
+
+參考程式模式： [PU02_01 帶有選擇性引數的預儲程序 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/pu02-yu-chu-cheng-xu/pu02-01-proc-with-opt-args)
