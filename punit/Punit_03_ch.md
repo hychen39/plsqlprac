@@ -76,7 +76,6 @@ end;
 
 ## Practice 3 在 SQL Select 中使用預儲函數
 
-Create the function `emp_country_name`. By giving an employee id, the function should return the country name in which the employee's department locates. When exceptions occur, the function should catch them and return the following message `!! Invalid employee id !!` .
 
 建立一個預儲函數 `emp_country_name`。給定員工編號，函數應該回傳員工所在部門的國家名稱。當發生例外時，函數應該捕捉它們並回傳以下訊息 `!! Invalid employee id !!`。
 
