@@ -24,7 +24,7 @@ ID 104 的員工自入職之日起工作一年後將首次獲得加薪，增幅�
  
 執行工作表時，應按 F5 鍵執行整個工作表。不要按 Ctrl + Enter 逐行執行。
 
-### Related programming patterns
+### 相關程式樣態
 
 [P03_03 綁定變數的使用 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch03/03-03-bind-var)
 
@@ -36,6 +36,6 @@ ID 104 的員工自入職之日起工作一年後將首次獲得加薪，增幅�
 
 提示：必須在查詢中連接 `Employees` 和 `Departments` 表格。
 
-### Related programming patterns
+### 相關程式樣態
 
 [P03_04 %type 綁定區域變數的資料型態到表格的欄位資料型態 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/ch03/03-04-type-ref)
