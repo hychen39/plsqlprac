@@ -139,6 +139,15 @@ employee_id: 111, last_name: Sciarra, salary: 7700
     - 系統記錄實際被更新的資料列數  
     - 系統處理交易（commit / rollback）  
 
+- 資料來源（Tables & Columns）
+
+執行過程中會使用到以下的資料表及欄位：
+
+| Table | 使用欄位 | 用途說明 |
+|---|---|---|
+| EMPLOYEES | EMPLOYEE_ID | 辨識受影響的員工資料列 |
+| EMPLOYEES | DEPARTMENT_ID | 篩選指定部門的員工 |
+| EMPLOYEES | SALARY | 讀取並更新員工薪資 |
 
 - Output
 
