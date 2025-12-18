@@ -92,8 +92,7 @@ employee_id: 111, last_name: Sciarra, salary: 7700
 參考程式模式： [PU02_01 帶有選擇性引數的預儲程序 | plsql-prog-patterns](https://hychen39.gitbook.io/plsql-prog-patterns/pu02-yu-chu-cheng-xu/pu02-01-proc-with-opt-args)
 
 
-## Practice 5:由 Use Case 到 PL/SQL Procedure 實作
-
+## Practice 5: 建立調整部門薪資的預儲程序
 
 ### 一、作業背景（Problem Context）
 

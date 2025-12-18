@@ -95,3 +95,68 @@ HR schema
 ![](https://oranswer.files.wordpress.com/2013/12/oracle_hr_schema.jpg)
 
   
+## Practice 4 Creating Employee Review Date Function
+
+### Use Case
+
+The HR department needs to calculate the employee review date based on the hire date. The review date is defined as the first Friday on or after every 6-year anniversary of the hire date. If the employee has not completed 6 years of service, the function should return NULL.
+
+The caller will provide the hire date as input, and the function will return the calculated review date or NULL if the employee has not completed 6 years of service.
+
+
+### IPO Analysis
+
+#### Input
+
+| Name | Type | Description |
+|---|---|---|
+| p_hire_date | DATE | Employee hire date | 
+
+#### Output
+
+| Name | Type | Description |
+|---|---|---|
+| Return value | DATE | Review date |
+
+
+### Process 
+
+1. Calculate completed years of service.
+2. Determine completed 6-year cycles.
+3. Compute the 6-year anniversary date.
+4. Find the first Friday on or after the anniversary date.
+
+### Function Specification
+
+Using the inputs and outputs defined above, one can specify the function as follows:
+
+```sql
+CREATE OR REPLACE FUNCTION get_review_date (
+    p_hire_date IN DATE
+) RETURN DATE;
+```
+
+### Task 
+
+Your task is to implement the function according to the specification and process described above.
+
+Upload your complete function code and screenshot of test results to complete the assignment.
+
+### Test Cases 
+
+You can use the following SQL statements to test your function:
+
+```sql
+SELECT get_review_date(DATE '2021-01-01') FROM dual;
+SELECT get_review_date(DATE '2019-03-01') FROM dual;
+SELECT get_review_date(DATE '2020-05-08') FROM dual;
+```
+
+The expected outputs are:
+
+```
+2027-01-07
+2025-03-07
+NULL
+```
+
