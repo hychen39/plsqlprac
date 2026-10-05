@@ -93,12 +93,14 @@ commit;
 1. 宣告一個綁定變數(bind variable)來存儲一個閾值
 2. 設定閾值為 50
 3. 寫一個空的 PL/SQL 區塊
-4. 在區塊中，寫一個 INSERT WITH SUBQUERY 語句，將 `t1` 表格中的資料列的值小於閾值的資料列插入到 `t1_keep` 表格中。
-5. 輸出 INSERT 語句影響的資料列數
-6. 在同一個區塊中，寫一個 DELETE 語句，刪除 `t1` 表格中的資料列的值小於閾值的資料列。
-7. 輸出 DELETE 語句影響的資料列數
+4. 在區塊中，寫一個 INSERT WITH SUBQUERY 語句，將 `t1` 表格中的小於閾值的資料列新增到 `t1_keep` 表格中。
+   - 不要使用游標或迴圈來完成這個任務，直接使用 INSERT WITH SUBQUERY 語句即可。
+   - 語法提示: `insert into t1_keep select * from t1 where val < :v_threshold;` 
+5. 輸出 INSERT 語句影響的資料列數(Hint: 使用 SQL 游標屬性)
+6. 在同一個區塊中，寫一個 DELETE 語句，刪除 `t1` 表格中的小於閾值的資料列。
+7. 輸出 DELETE 語句影響的資料列數(Hint: 使用 SQL 游標屬性)
 8. Commit 區塊中的交易
-9. 在區塊之後，撰寫 Query, 查詢 `t1_keep` 表格來檢查結果。
+9.  在區塊之後，撰寫 Query, 查詢 `t1_keep` 表格來檢查結果。
 
 範例輸出：
 ```
